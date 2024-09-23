@@ -4,18 +4,24 @@ import User from "./Components/User";
 import Contactus from "./Components/Contact us";
 import Services from "./Components/Services";
 import Header from "./Components/Subcomponents/Header";
+// import { Routes,Route } from "react-router-dom";
 
 //3
 function App(){
     return(
         <div>
             <Header/>
-            <h2>Hello App components for Main component</h2>
-            <Home/>
-            <About/>
-            <User/>
-            <Contactus/>
-            <Services/>
+            <div className="container mt-3">
+                <h2>Hello App components for Main component</h2>
+                {/* <Routes>
+                    <Route path="/" element={<Home/>}></Route>
+                </Routes> */}
+                <Home/>
+                <About/>
+                <User/>
+                <Contactus/>
+                <Services/>
+            </div>
         </div>        
     )
 }
